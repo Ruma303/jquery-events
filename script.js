@@ -6,6 +6,12 @@
 }); */
 
 
+//# Assegnare i gestori di eventi utilizzando .on()
+/* $("h1").on("click", { message: "Messaggio dell'alert" },
+    (e) => alert(e.data.message)
+);*/
+
+
 //# Eventi multipli
 /* $("h1").on({
     click: function (event) {
@@ -33,6 +39,7 @@ $("h1").on({
 }); */
 
 
+
 //, Rimozione eventi
 //? Rimozione dei gestori di eventi utilizzando .off()
 /* $("h1").off("click", handleArticleClick);
@@ -40,6 +47,14 @@ $("h1").off("mouseenter", handleParagraphMouseEnter);
 
 //? Rimozione di tutti i gestori di eventi 'click' per elementi 'h1'
 $("h1").off("click"); */
+
+
+
+//, bind() e unbind()
+/* $("h1").bind("click", { message: "Messaggio dell'alert" },
+    (e) => console.log(e.data.message)
+);
+$("h1").unbind("click"); */
 
 
 
